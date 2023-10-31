@@ -1,0 +1,15 @@
+{
+    "name": "guilherme/woocommerce-memberkit",
+    "autoload": {
+        "psr-4": {
+            "Guilherme\\WoocommerceMemberkit\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "guilherme",
+            "email": "guilherme00pereira@gmail.com"
+        }
+    ],
+    "require": {}
+}
