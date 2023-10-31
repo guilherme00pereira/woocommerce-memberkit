@@ -3,7 +3,7 @@
  * Plugin Name: WooCommerce MemberKit
  * Plugin URI: http://www.woothemes.com/products/woocommerce-memberkit/
  * Description: WooCommerce integration with MemberKit.
- * Version: 0.0.1
+ * Version: 0.0.2
  * Author: G28 - Guilherme Pereira
  * Author URI: http://www.g28.com.br
  *
@@ -26,27 +26,12 @@ function woocommerce_memberkit_fallback_notice() {
  * @since 0.0.1
  */
 function woocommerce_memberkit_init() {
-
 	// Checks if WooCommerce is installed.
 	if ( ! class_exists( 'WC_Integration' ) ) {
 		add_action( 'admin_notices', 'woocommerce_memberkit_fallback_notice' );
 
 		return;
 	}
-
-	/**
-	 * Add the integration to WooCommerce.
-	 *
-	 * @since 0.0.1
-	 */
-	add_filter( 'woocommerce_integrations', 'woocommerce_add_memberkit_integration' );
-
-	/**
-	 * Load plugin textdomain.
-	 *
-	 * @since 0.0.1
-	 */
-	load_plugin_textdomain( 'woocommerce-memberkit', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 }
 
 add_action( 'plugins_loaded', 'woocommerce_memberkit_init' );

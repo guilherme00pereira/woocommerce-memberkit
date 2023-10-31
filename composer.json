@@ -1,9 +1,12 @@
 {
-    "name": "guilherme/woocommerce-memberkit",
+    "name": "g28/woocommerce-memberkit",
     "autoload": {
         "psr-4": {
-            "Guilherme\\WoocommerceMemberkit\\": "src/"
-        }
+            "G28\\WoocommerceMemberkit\\": "src/"
+        },
+        "files": [
+            "src/startup.php"
+        ]
     },
     "authors": [
         {

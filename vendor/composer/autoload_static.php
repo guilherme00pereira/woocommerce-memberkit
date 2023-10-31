@@ -6,15 +6,19 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitcb245a8671e81f4dce72626eb86864ff
 {
+    public static $files = array (
+        'e241833d3207b7e5beb5667f11697129' => __DIR__ . '/../..' . '/src/startup.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'G' => 
         array (
-            'Guilherme\\WoocommerceMemberkit\\' => 31,
+            'G28\\WoocommerceMemberkit\\' => 25,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Guilherme\\WoocommerceMemberkit\\' => 
+        'G28\\WoocommerceMemberkit\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),

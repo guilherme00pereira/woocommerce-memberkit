@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Guilherme\\WoocommerceMemberkit\\' => array($baseDir . '/src'),
+    'G28\\WoocommerceMemberkit\\' => array($baseDir . '/src'),
 );
