@@ -3,13 +3,19 @@
 namespace G28\WoocommerceMemberkit;
 
 if (!function_exists(__NAMESPACE__ . 'runPlugin')) {
-    function runPlugin(): void
+    function runPlugin( $root ): void
     {
+
         $plugin_path = trailingslashit(WP_PLUGIN_DIR) . 'woocommerce/woocommerce.php';
         if (!in_array($plugin_path, wp_get_active_and_valid_plugins())) {
             add_action('admin_notices', 'woocommerce_memberkit_fallback_notice');
             return;
         }
+
+        
+
+        $plugin = Plugin::getInstance();
+        $plugin->start($root);
 
         add_action('plugins_loaded', function () {
             new Admin();

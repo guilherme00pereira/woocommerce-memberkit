@@ -1,0 +1,3 @@
+[ 02/11/2023 07:49:19 PM ] Usuário  foi cadastrado no(s) curso(s): Curso Memberkit
+[ 02/11/2023 07:39:17 PM ] Usuário  cadastrado no MemberKit: 
+1
